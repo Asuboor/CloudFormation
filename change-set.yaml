@@ -1,0 +1,11 @@
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      # ImageId: ami-066784287e358dad1
+      ImageId: ami-02c21308fed24a8ab
+      Tags:
+        - Key: "Name"
+          # Value: !Join ["-",["Lets","C","ChangeSet"]]
+          Value: "Test-ChangeSet"
